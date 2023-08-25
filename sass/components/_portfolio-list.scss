@@ -1,0 +1,76 @@
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
+
+  @include tablet {
+    gap: 72px 24px;
+    justify-content: flex-start;
+  }
+
+  @include desktop {
+    row-gap: 48px;
+  }
+}
+
+.portfolio-text {
+  margin-top: 8px;
+  color: $color-slate;
+  font-weight: 400;
+}
+
+.portfolio-list-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item {
+  border: 1px solid $color-cornflower;
+
+  @include tablet {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 40px 32px;
+
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: $color-cloud;
+  background-color: $color-iris;
+
+  transform: translateY(100%);
+  transition: transform $transition-dur-and-func;
+}
+
+.portfolio-img-text {
+  padding: 32px 16px;
+}
+
+.portfolio-link {
+  display: block;
+  transition: box-shadow $transition-dur-and-func;
+}
+
+.portfolio-link:is(:hover, :focus) {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-link:is(:hover, :focus) .portfolio-overlay {
+  transform: translateY(0);
+}

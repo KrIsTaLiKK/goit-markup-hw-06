@@ -1,0 +1,36 @@
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  background-color: $color-white;
+  color: $color-slate;
+}
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  @include desktop {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.portfolio-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @include tablet {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+}

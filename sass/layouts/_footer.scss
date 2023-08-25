@@ -1,0 +1,112 @@
+.footer {
+  background-color: $color-navy-blue;
+
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.logo-footer {
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  @include desktop {
+    gap: 0;
+  }
+}
+
+.footer-text-wrapper,
+.sm-container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    margin: 0;
+  }
+}
+
+@include desktop {
+  .sm-container {
+    margin-left: 120px;
+    margin-right: 80px;
+  }
+}
+
+.footer-text {
+  font-weight: 400;
+  width: 264px;
+  margin-top: 17px;
+  color: $color-cloud;
+}
+
+.footer-subtitle-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: $color-white;
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.list-footer-sm {
+  gap: 16px;
+}
+
+@include tablet {
+  .footer-form {
+    display: flex;
+  }
+}
+
+.footer-email-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 16px;
+
+  color: $color-white;
+  background-color: $color-navy-blue;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: none;
+
+  @include tablet {
+    width: 264px;
+  }
+}
+
+.btn-footer {
+  min-width: 165px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
+  margin-top: 16px;
+
+  @include tablet {
+    margin-top: 0;
+    margin-left: 24px;
+  }
+}

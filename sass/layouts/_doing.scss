@@ -1,0 +1,22 @@
+.doing {
+  @media screen and (max-width: 1157px) {
+    display: none;
+  }
+
+  @include desktop {
+    padding-top: 0px;
+
+    &-list {
+      display: flex;
+    }
+
+    &-item {
+      flex-basis: calc((100% - 48px) / 3);
+      border: 1px solid $color-cornflower;
+
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+  }
+}

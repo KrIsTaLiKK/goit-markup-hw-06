@@ -1,0 +1,11 @@
+@mixin tablet() {
+  @media screen and (min-width: $breakpoint-tab) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (min-width: $breakpoint-desk) {
+    @content;
+  }
+}

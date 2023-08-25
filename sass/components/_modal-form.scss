@@ -1,0 +1,127 @@
+.modal-title {
+  margin-bottom: 16px;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: $color-navy-blue;
+  text-align: center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  &-label {
+    margin-bottom: 4px;
+  }
+
+  &-input-wrapper {
+    position: relative;
+    margin-bottom: 8px;
+  }
+
+  &-input {
+    padding: 8px 8px 8px 34px;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    color: $color-navy-blue;
+    border: 1px solid $color-navy-blue-modal;
+
+    transition: border $transition-dur-and-func;
+  }
+
+  &-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+
+    fill: $color-navy-blue;
+    transform: translateY(-50%);
+    transition: fill $transition-dur-and-func;
+
+    .modal-form-input:focus + & {
+      fill: $color-iris;
+    }
+  }
+}
+
+.modal-form-input:focus,
+.field-textarea:focus {
+  outline: none;
+  border: 1px solid $color-iris;
+}
+
+.field-textarea {
+  padding-left: 16px;
+  margin-bottom: 16px;
+  resize: none;
+  height: 120px;
+}
+
+.field-textarea::placeholder,
+.footer-email-input::placeholder,
+.modal-form-label,
+.policy-link {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+  color: $color-light-slate;
+}
+
+.footer-email-input::placeholder {
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.field-textarea::placeholder {
+  color: $color-navy-blue-modal;
+}
+
+.policy-link {
+  line-height: 1.33;
+  color: $color-iris;
+}
+
+.checkbox {
+  margin-bottom: 24px;
+
+  &-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+
+  &-input {
+    margin: 0;
+  }
+
+  &-icon {
+    position: absolute;
+    fill: $color-cloud;
+    opacity: 0;
+    transition: opacity $transition-dur-and-func;
+
+    .checkbox-input:checked + & {
+      opacity: 1;
+    }
+  }
+}
+
+.empty-checkbox {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 1px;
+  border: 1px solid $color-navy-blue-modal;
+
+  transition: background-color $transition-dur-and-func,
+    border-color $transition-dur-and-func;
+
+  .checkbox-input:checked ~ & {
+    background-color: $color-ocean;
+    border-color: $color-ocean;
+  }
+}

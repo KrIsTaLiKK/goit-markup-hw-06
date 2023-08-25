@@ -1,0 +1,33 @@
+.hero {
+  padding-top: 112px;
+  padding-bottom: 112px;
+
+  @include desktop {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  &-title {
+    max-width: 320px;
+    margin: 0 auto 72px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    color: $color-white;
+    text-align: center;
+    text-transform: capitalize;
+
+    @include tablet {
+      max-width: 496px;
+      margin-bottom: 36px;
+      font-size: 56px;
+      line-height: 1.07;
+      letter-spacing: 1.12px;
+    }
+
+    @include desktop {
+      margin-bottom: 48px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.list-sm-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.mob-list-sm-icon {
+  gap: calc(27px + (56 - 27) * ((100vw - 320px) / (428 - 320)));
+}
+
+.item-sm-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.link-sm-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: $color-iris;
+
+  transition: background-color var(--transition-dur-and-func);
+
+  &:is(:hover, :focus) {
+    background-color: $color-green;
+  }
+}
+
+.ocean-hover:is(:hover, :focus) {
+  background-color: $color-ocean;
+}

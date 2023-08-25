@@ -1,0 +1,37 @@
+.close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  color: $color-navy-blue;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $color-white;
+  cursor: pointer;
+
+  transition: background-color $transition-dur-and-func;
+
+  &-cornflower {
+    background-color: $color-cornflower;
+  }
+
+  &:is(:hover, :focus) {
+    background-color: $color-ocean;
+  }
+}
+
+.icon-close-button {
+  fill: currentColor;
+  transition: fill $transition-dur-and-func;
+
+  .close-button:is(:hover, :focus) & {
+    fill: $color-white;
+  }
+}

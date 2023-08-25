@@ -1,0 +1,22 @@
+.btn {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  padding: 16px 32px;
+  border: 1px solid transparent;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  color: $color-white;
+  cursor: pointer;
+  border-radius: 4px;
+  background: $color-iris;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  transition: background-color $transition-dur-and-func;
+
+  &:is(:hover, :focus) {
+    background-color: $color-ocean;
+  }
+}

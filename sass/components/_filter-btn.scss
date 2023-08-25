@@ -1,0 +1,50 @@
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+  width: 270px;
+  margin-bottom: 48px;
+
+  @include tablet {
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 64px;
+  }
+
+  @include desktop {
+    margin-bottom: 72px;
+  }
+}
+
+.filter-btn {
+  height: 40px;
+  padding: 8px 16px;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  color: $color-iris;
+  background-color: $color-cloud;
+  border-radius: 4px;
+  border: 1px solid $color-cornflower;
+  cursor: pointer;
+
+  transition: color $transition-dur-and-func,
+    background-color $transition-dur-and-func,
+    border-color $transition-dur-and-func, box-shadow $transition-dur-and-func;
+
+  @include tablet {
+    height: 48px;
+    padding-top: 12px 24px;
+  }
+
+  &:is(:hover, :focus) {
+    color: $color-white;
+    background-color: $color-ocean;
+    border-color: transparent;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+}
