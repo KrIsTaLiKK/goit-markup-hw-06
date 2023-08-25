@@ -37,7 +37,7 @@
   transition: transform $transition-dur-and-func;
 
   @include tablet {
-    max-width: 408px;
+    min-width: 408px;
   }
 
   @include desktop {
