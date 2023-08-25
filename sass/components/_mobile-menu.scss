@@ -42,7 +42,7 @@
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.72px;
+    letter-spacing: 0.02em;
     color: $color-navy-blue;
     text-transform: capitalize;
     transition: color $transition-dur-and-func;
@@ -60,7 +60,7 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.02em;
     color: inherit;
 
     transition: color $transition-dur-and-func;

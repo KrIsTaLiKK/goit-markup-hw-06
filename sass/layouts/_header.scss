@@ -52,7 +52,7 @@
     font-size: inherit;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     color: $color-navy-blue;
   }
 }
@@ -105,7 +105,7 @@
     font-size: 12px;
     font-style: normal;
     line-height: 1.17;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.04em;
     color: inherit;
     transition: color $transition-dur-and-func;
 
@@ -119,6 +119,6 @@
     padding: 25px 0;
     font-size: inherit;
     line-height: 1.5;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
   }
 }
