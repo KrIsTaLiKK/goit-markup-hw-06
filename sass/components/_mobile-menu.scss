@@ -42,7 +42,7 @@
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.72px;
     color: $color-navy-blue;
     text-transform: capitalize;
     transition: color $transition-dur-and-func;
@@ -60,14 +60,14 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.4px;
     color: inherit;
 
     transition: color $transition-dur-and-func;
   }
 }
 
-@media screen and (max-width: 427px) {
+@media screen and (max-width: 432px) {
   .tel-link {
     font-size: 24px;
   }

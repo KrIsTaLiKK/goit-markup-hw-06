@@ -52,15 +52,9 @@
     font-size: inherit;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
     color: $color-navy-blue;
   }
-}
-
-.header-link:is(:hover, :focus),
-.email-link:is(:hover, :focus),
-.mob-menu-link:is(:hover, :focus) {
-  color: $color-ocean;
 }
 
 .current-link-page::after {
@@ -105,13 +99,9 @@
     font-size: 12px;
     font-style: normal;
     line-height: 1.17;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.48px;
     color: inherit;
     transition: color $transition-dur-and-func;
-
-    &:is(:hover, :focus) {
-      color: $color-ocean;
-    }
   }
 
   @include desktop {
@@ -119,6 +109,6 @@
     padding: 25px 0;
     font-size: inherit;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
   }
 }

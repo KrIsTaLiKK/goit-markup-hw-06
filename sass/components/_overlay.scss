@@ -7,10 +7,25 @@
   background-color: $color-navy-blue;
   background-image: $grad, url('../images/mob-img/mob-people-office.jpg');
 
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 520px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 520px),
+    screen and (min-resolution: 192dpi) and (max-width: 520px),
+    screen and (min-resolution: 2dppx) and (max-width: 520px) {
+    background-image: $grad, url('../images/mob-img/mob-people-office@2x.jpg');
+  }
+
   @media screen and (min-width: 521px) {
     height: 436px;
     max-width: 899px;
     background-image: $grad, url('../images/tablet-img/tab-people-office.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 521px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 521px),
+    screen and (min-resolution: 192dpi) and (min-width: 521px),
+    screen and (min-resolution: 2dppx) and (min-width: 521px) {
+    background-image: $grad,
+      url('../images/tablet-img/tab-people-office@2x.jpg');
   }
 
   @media screen and (min-width: 900px) {
@@ -18,36 +33,15 @@
     background-image: $grad, url('../images/desktop-img/desk-people-office.jpg');
   }
 
-  @include desktop {
-    height: 600px;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 520px),
-  screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 520px),
-  screen and (min-resolution: 192dpi) and (max-width: 520px),
-  screen and (min-resolution: 2dppx) and (max-width: 520px) {
-  .overlay {
-    background-image: $grad, url('../images/mob-img/mob-people-office@2x.jpg');
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 521px),
-  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 521px),
-  screen and (min-resolution: 192dpi) and (min-width: 521px),
-  screen and (min-resolution: 2dppx) and (min-width: 521px) {
-  .overlay {
-    background-image: $grad,
-      url('../images/tablet-img/tab-people-office@2x.jpg');
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 900px),
-  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 900px),
-  screen and (min-resolution: 192dpi) and (min-width: 900px),
-  screen and (min-resolution: 2dppx) and (min-width: 900px) {
-  .overlay {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 900px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 900px),
+    screen and (min-resolution: 192dpi) and (min-width: 900px),
+    screen and (min-resolution: 2dppx) and (min-width: 900px) {
     background-image: $grad,
       url('../images/desktop-img/desk-people-office@2x.jpg');
+  }
+
+  @include desktop {
+    height: 600px;
   }
 }

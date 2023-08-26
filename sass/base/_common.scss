@@ -34,3 +34,7 @@ body {
     padding-bottom: 120px;
   }
 }
+
+.ocean-hover:is(:hover, :focus) {
+  color: $color-ocean;
+}
