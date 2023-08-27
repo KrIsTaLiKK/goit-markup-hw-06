@@ -82,6 +82,9 @@
 .policy-link {
   line-height: 1.33;
   color: $color-iris;
+  @media screen and (max-width: 407px) {
+    font-size: 10px;
+  }
 }
 
 .checkbox {
@@ -92,6 +95,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 0px;
+
+    @media screen and (max-width: 407px) {
+      font-size: 10px;
+    }
   }
 
   &-input {
