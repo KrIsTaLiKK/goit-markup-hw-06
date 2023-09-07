@@ -106,7 +106,6 @@ body {
 .title {
   margin-bottom: 72px;
   font-size: 36px;
-  font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
@@ -977,7 +976,6 @@ body {
   max-width: 320px;
   margin: 0 auto 72px;
   font-size: 36px;
-  font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.72px;
   color: #ffffff;
